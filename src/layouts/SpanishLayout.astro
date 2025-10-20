@@ -1,0 +1,110 @@
+---
+import Navigation from "../components/Navigation.astro";
+import Openbutton from "../components/Hamburguer.astro";
+import logo from "../assets/image/logo.png";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/png" href={logo.src} />
+    <meta name="google-adsense-account" content="ca-pub-4590185901736265">
+    <meta name="google-site-verification" content="M_3xpWfmwyovVPjekuP9oHivxTbD10tfGwi_YmkBrE0" />
+		<meta name="viewport" content="width=device-width" />
+    <meta name="description" content="Enjoy the best reggae and dancehall Jamaican music on Raggart Radio. Listen to your favorite songs 24/7, discover new artists, and connect with the unique vibe of Jamaica. The essence of reggae in one place!" />
+		<meta name="generator" content={Astro.generator} /> 
+		<title>Raggart - Jamaican Music</title>
+		<script src="https://unpkg.com/@phosphor-icons/web"></script>
+	</head>
+  <body>
+    <Openbutton />
+    <Navigation />
+    <slot />
+  </body>
+</html>
+
+<style is:global lang="scss">
+  @use '../assets/sass/index' as *; 
+    
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  ol, a, li {
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  body {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: $white;
+    margin: 0 5%;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    color: $white;
+    margin: 0 5%;
+  }
+
+  h3 {
+    font-size: 2rem;
+    color: $white;
+    margin: 0 15%; 
+  }
+  
+  .underline {
+    width: 130px;
+    height: 2px;
+    background-color: $red;
+    justify-content: left;
+    border-radius: 2px;
+    margin: 0 5% 20px; 
+  }
+  
+  p {
+    font-size: 1.25rem;
+    color: $white;
+    margin: 0 5%; 
+  }
+
+  a {
+    font-size: 1rem;
+    color: $white;
+  }
+  
+  // boton
+  
+  .primarybutton {
+    width: 90%;
+    margin: 20px 10%;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+  }
+    
+  a {
+    font-size: 1rem;
+  }
+  
+  .primarybutton {
+    background-color: transparent;
+    border-radius: 5px;
+    box-shadow: 0 0 25px 15px rgba($green, 15%);
+  }
+  
+  .primarybutton:hover {
+    background-color: transparent;
+    box-shadow: 0 0 25px 15px rgba($green, 25%);
+  }
+</style>
