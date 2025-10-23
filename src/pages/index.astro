@@ -1,17 +1,15 @@
 ---
 import Header from "../components/Header.astro";
-import SpanishLayout from "../layouts/SpanishLayout.astro";
+import Layout from "../layouts/Layout.astro";
 import Social from "../components/Social.astro";
 import Gallery from "../components/Gallery.astro";
-import Videos from "../components/Videos.astro";
 ---
 
-<SpanishLayout>
+<Layout>
 	<Header />
-	<!-- <Gallery />
-	<Videos /> -->
+	<Gallery />
 	<Social />
-</SpanishLayout>
+</Layout>
 <script>
 	import "../script/mainMenu";
 	import "../script/Radio"
