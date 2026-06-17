@@ -3,16 +3,10 @@ import pipo from "../assets/image/pipo.png"
 import conexion from "../assets/image/conexion.png"
 ---
 <section id="media">
-  <h2>SOCIAL</h2>
-  <div class="underline"></div>
-  <figure>
-    <a href="https://open.spotify.com/intl-es/artist/011RlZS72X5YMFxJPmfr7C?si=im3MCWXwSiCscrzHN4qsCw" target="_blank"><i class="ph-fill ph-spotify-logo"></i></a>
-    <a href="https://www.youtube.com/@DjRaggart" target="_blank"><i class="ph-fill ph-youtube-logo"></i></a>
-    <a href="https://tidal.com/browse/artist/14085152" target="_blank"><i class="ph-fill ph-tidal-logo"></i></a>
-    <a href="https://www.deezer.com/mx/artist/5577174" target="_blank"><i class="ph-fill ph-equalizer"></i></a>
-  </figure> 
-  <p>&copy; D'MATA - developed by <a href="https://luissanteliz.dev/" target="_blank" rel="noopener noreferrer">Louis santeliz</a></p>
-  </section>
+  <div class="underline"></div> 
+  <p>&copy; 2026 DE MATA MUSIC. ALL RIGHTS RESERVED. - DEVELOPED BY <a href="https://luissanteliz.netlify.app/" target="_blank" rel="noopener noreferrer">Louis santeliz</a></p>
+</section>
+  
 <div class="radio-container">
     <div class="contents-row">
     <img src={pipo.src} alt="logo">
@@ -34,6 +28,14 @@ import conexion from "../assets/image/conexion.png"
     align-items: center;
     background-color: black;
     padding-bottom: 80px;
+    a {
+      color: $yellow;
+      text-decoration: underline;
+      transition: color 0.3s;
+    }
+    p {
+      text-align: center;
+    }
   }
 
   i {
